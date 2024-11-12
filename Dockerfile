@@ -1,5 +1,7 @@
-# Usa la imagen oficial de Python
 FROM python:3.9-slim
+
+# Instalar Flask
+RUN pip install flask
 
 # Copia el archivo Python al contenedor
 COPY index.py /app/index.py
